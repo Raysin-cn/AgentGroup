@@ -390,11 +390,11 @@ class AgentGroupChat:
                 candidates = [candidate.id_number for candidate in self.characters.get_all_characters() if
                               candidate.id_number != main_character.id_number]
                 action_space, thought, plan, chosen_character_id_number = main_character.choose(main_character_environment_summary,
-                                                            round_description,
-                                                            main_character_action_history_description,
-                                                            candidates_list,
-                                                            self.private_chat_round,
-                                                            requirement_list=candidates)
+                        round_description,
+                        main_character_action_history_description,
+                        candidates_list,
+                        self.private_chat_round,
+                        requirement_list=candidates)
 
                 if verify_constrained_action(chosen_character_id_number, candidates):
                     verify_result = -10
@@ -407,17 +407,17 @@ class AgentGroupChat:
             evaluation_event = [main_character.id_number,
                                 main_character.id_number,
                                 '### EVALUATION ACTION SPACE',
-                                'agent response: %s[SEP]ground truth: %s' % (str(action_space),
-                                                                             str(candidates))]
+                                'agent response: %s[SEP]ground truth: %s' % (str(action_space), str(candidates))]
             new_action_index = self.new_action_insert(evaluation_event, now_round_number)
             action_index.append(new_action_index)
             # ======================================================================================= #
             chosen_character = self.characters.get_character_by_id(chosen_character_id_number)
             chosen_character_action_history_description = self.action_history.get_description(chosen_character_id_number, max_num=ACTIONHISTORY_RETRIEVE_NUM_COMPETE)
-            chosen_character_environment_summary = chosen_character.perceive(self.rule_setting,
-                                                                             self.resources.get_description(),
-                                                                             chosen_character_action_history_description,
-                                                                             self.all_round_number)
+            chosen_character_environment_summary = chosen_character.perceive(
+                self.rule_setting,
+                self.resources.get_description(),
+                chosen_character_action_history_description,
+                self.all_round_number)
             self.logger.gprint(thought='',
                 important_log='important_log',
                 source_character=chosen_character.id_number,
@@ -444,12 +444,13 @@ class AgentGroupChat:
                 # 不需要校验
                 # ======================================================================================= #
                 # 对话
-                number_of_action_history, thought, action_event = main_character.facechat(target_candidate_id_number=chosen_character.id_number,
-                                                       target_character_description=chosen_character.get_short_description(),
-                                                       environment_description=main_character_environment_summary,
-                                                       action_history_description=main_character_action_history_description,
-                                                       chat_history=chat_history,
-                                                       plan=plan)
+                number_of_action_history, thought, action_event = main_character.facechat(
+                    target_candidate_id_number=chosen_character.id_number,
+                    target_character_description=chosen_character.get_short_description(),
+                    environment_description=main_character_environment_summary,
+                    action_history_description=main_character_action_history_description,
+                    chat_history=chat_history,
+                    plan=plan)
                 evaluation_event = [main_character.id_number,
                                 main_character.id_number,
                                 '### EVALUATION ACTION HISTORY',
@@ -1292,7 +1293,6 @@ if __name__ == '__main__':
                         logger=logger)
 
     for i in range(game_round):
-
         logger.gprint(important_log='important_log',
                       source_character='',
                       target_character='',

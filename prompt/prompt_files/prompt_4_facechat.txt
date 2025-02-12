@@ -45,7 +45,7 @@ Here is an example of your output:
 ### Response: xxxxx
 
 Reminder:
-1. Your output must be in English.
+1. Your output must be in Chinese.
 2. You should make your response more specific, such as showing your experiences, listing resources of your own and giving your future plan, in order to persuade others and achieve your goals easier.
 3. You should directly state your intentions without repeating any others' words or history words.
 4. Your response should stick to your character settings and reflect your personality.

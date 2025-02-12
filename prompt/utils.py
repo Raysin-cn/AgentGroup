@@ -30,7 +30,7 @@ tencent_secretid = ""
 tencent_secretkey = ""
 
 # GLM4 API
-glm_key = ""
+glm_key = "7936905f86523987e7a5369821dcbacb.8Is1eSvZbdgO5AVp"
 
 
 model_list = {'THUDM/chatglm3-6b':[AutoTokenizer, AutoModel],

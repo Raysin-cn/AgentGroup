@@ -282,7 +282,7 @@ def create_prompt_input(*args):
     return [str(arg) for arg in args]
 
 
-def generate_with_response_parser(message_or_prompt, gpt_param=None, engine='gpt4', parser_fn=non_parse_fn, retry=5,
+def generate_with_response_parser(message_or_prompt, gpt_param=None, engine='glm-4', parser_fn=non_parse_fn, retry=5,
                                   logger=None, func_name='None'):
     if parser_fn is None:
         parser_fn = non_parse_fn

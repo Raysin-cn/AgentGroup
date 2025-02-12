@@ -35,4 +35,4 @@ You can choose a character to chat with him in next !<INPUT 5>! round of dialogu
 Take all of this information and summarize it based on your own description and historical track record, and think about what your next course of action should be according to the rules of the game.
 Please break down your goals step-by-step, don't talk about too much in one conversation, and try to take the chat step-by-step.
 Please do not generate more than 100 tokens.
-And your output must be in English:
+And your output must be in Chinese:

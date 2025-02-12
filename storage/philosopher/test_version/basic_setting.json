@@ -1,0 +1,1102 @@
+{
+    "config_file_SAVE_FOLDER": "'./storage/philosopher/initial_version'",
+    "config_file_TEST_FOLDER": "'./storage/philosopher/test_version'",
+    "config_file_LOG_FOLDER": "'./logs'",
+    "config_file_INPUT_FOLDER": "'./storage/succession/inputs'",
+    "config_file_model_cache_dir": "'cache_folder/models--meta-llama--Llama-2-7b-chat-hf/snapshots/9eae4b460bfc40df6c741e67d9634f963b31e02e'",
+    "config_file_debug": "False",
+    "config_file_MIN_SUPPORT_RELATION_SCORE": "20",
+    "config_file_PRIVATE_CHAT_ROUND": "3",
+    "config_file_MEETING_CHAT_ROUND": "3",
+    "config_file_GROUP_CHAT_ROUND": "3",
+    "config_file_GAME_ROUND": "3",
+    "config_file_INITIAL_RELATION_SCORE": "10",
+    "config_file_MAX_RELATION_SCORE_CHANGE": "10",
+    "config_file_MAX_RELATION_SCORE": "100",
+    "config_file_MIN_RELATION_SCORE": "0",
+    "config_file_MAX_BELIEF_SCORE_CHANGE": "10",
+    "config_file_MIN_BELIEF_SCORE": "0",
+    "config_file_MAX_BELIEF_SCORE": "100",
+    "config_file_INITIAL_INFLUENCE_SCORE": "0",
+    "config_file_MAX_INFLUENCE_SCORE_CHANGE": "30",
+    "config_file_MAX_INFLUENCE_SCORE": "9999",
+    "config_file_MIN_INFLUENCE_SCORE": "0",
+    "config_file_MAX_MEMORY_RETRIEVE_IN_PERCEIVE": "20",
+    "config_file_MAX_MEMORY_RETRIEVE_IN_REFLECT": "999",
+    "config_file_ERROR_RETRY_TIMES": "10",
+    "config_file_ACTIONHISTORY_VOTE": "30",
+    "config_file_ACTIONHISTORY_NONVOTE": "20",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM": "10",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_ANNOUNCEMENT": "20",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_COMPETE": "20",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_COLLABORATE": "20",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_UPDATE": "30",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_WHOLE_INFORMATION": "30",
+    "config_file_ACTIONHISTORY_RETRIEVE_NUM_PARTIAL_INFORMATION": "30",
+    "rule_setting": "./storage/philosopher/philosopher_rule_setting.txt",
+    "finished_states": {
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0003": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+        ],
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0004": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+        ],
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0001": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50
+        ],
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0000": [
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+        ],
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0002": [
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84
+        ],
+        "NOW_ROUND:0+ACTION:COMPETE+CHARACTER:C0005": [
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0003": [
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0004": [
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0001": [
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0000": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0002": [
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191
+        ],
+        "NOW_ROUND:0+ACTION:COLLABORATE+CHARACTER:C0005": [
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0003": [
+            210
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0004": [
+            211
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0001": [
+            212
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0000": [
+            213
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0002": [
+            214
+        ],
+        "NOW_ROUND:0+ACTION:ANNOUNCEMENT+CHARACTER:C0005": [
+            215
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0003": [
+            216,
+            217,
+            218,
+            219,
+            220
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0004": [
+            221,
+            222,
+            223,
+            224,
+            225
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0001": [
+            226,
+            227,
+            228,
+            229,
+            230
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0000": [
+            231,
+            232,
+            233,
+            234,
+            235
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0002": [
+            236,
+            237,
+            238,
+            239,
+            240
+        ],
+        "NOW_ROUND:0+ACTION:UPDATE+CHARACTER:C0005": [
+            241,
+            242,
+            243,
+            244,
+            245
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0003": [
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0004": [
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0001": [
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0000": [
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0002": [
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330
+        ],
+        "NOW_ROUND:1+ACTION:COMPETE+CHARACTER:C0005": [
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0003": [
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364,
+            365
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0004": [
+            366,
+            367,
+            368,
+            369,
+            370,
+            371,
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382,
+            383
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0001": [
+            384,
+            385,
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399,
+            400,
+            401
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0000": [
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0002": [
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435,
+            436,
+            437
+        ],
+        "NOW_ROUND:1+ACTION:COLLABORATE+CHARACTER:C0005": [
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0003": [
+            456
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0004": [
+            457
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0001": [
+            458
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0000": [
+            459
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0002": [
+            460
+        ],
+        "NOW_ROUND:1+ACTION:ANNOUNCEMENT+CHARACTER:C0005": [
+            461
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0003": [
+            462,
+            463,
+            464,
+            465,
+            466
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0004": [
+            467,
+            468,
+            469,
+            470,
+            471
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0001": [
+            472,
+            473,
+            474,
+            475,
+            476
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0000": [
+            477,
+            478,
+            479,
+            480,
+            481
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0002": [
+            482,
+            483,
+            484,
+            485,
+            486
+        ],
+        "NOW_ROUND:1+ACTION:UPDATE+CHARACTER:C0005": [
+            487,
+            488,
+            489,
+            490,
+            491
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0003": [
+            492,
+            493,
+            494,
+            495,
+            496,
+            497,
+            498,
+            499,
+            500,
+            501,
+            502,
+            503,
+            504,
+            505,
+            506,
+            507,
+            508
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0004": [
+            509,
+            510,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521,
+            522,
+            523,
+            524,
+            525
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0001": [
+            526,
+            527,
+            528,
+            529,
+            530,
+            531,
+            532,
+            533,
+            534,
+            535,
+            536,
+            537,
+            538,
+            539,
+            540,
+            541,
+            542
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0000": [
+            543,
+            544,
+            545,
+            546,
+            547,
+            548,
+            549,
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556,
+            557,
+            558,
+            559
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0002": [
+            560,
+            561,
+            562,
+            563,
+            564,
+            565,
+            566,
+            567,
+            568,
+            569,
+            570,
+            571,
+            572,
+            573,
+            574,
+            575,
+            576
+        ],
+        "NOW_ROUND:2+ACTION:COMPETE+CHARACTER:C0005": [
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586,
+            587,
+            588,
+            589,
+            590,
+            591,
+            592,
+            593
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0003": [
+            594,
+            595,
+            596,
+            597,
+            598,
+            599,
+            600,
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0004": [
+            612,
+            613,
+            614,
+            615,
+            616,
+            617,
+            618,
+            619,
+            620,
+            621,
+            622,
+            623,
+            624,
+            625,
+            626,
+            627,
+            628,
+            629
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0001": [
+            630,
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638,
+            639,
+            640,
+            641,
+            642,
+            643,
+            644,
+            645,
+            646,
+            647
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0000": [
+            648,
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            655,
+            656,
+            657,
+            658,
+            659,
+            660,
+            661,
+            662,
+            663,
+            664,
+            665
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0002": [
+            666,
+            667,
+            668,
+            669,
+            670,
+            671,
+            672,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            681,
+            682,
+            683
+        ],
+        "NOW_ROUND:2+ACTION:COLLABORATE+CHARACTER:C0005": [
+            684,
+            685,
+            686,
+            687,
+            688,
+            689,
+            690,
+            691,
+            692,
+            693,
+            694,
+            695,
+            696,
+            697,
+            698,
+            699,
+            700,
+            701
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0003": [
+            702
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0004": [
+            703
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0001": [
+            704
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0000": [
+            705
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0002": [
+            706
+        ],
+        "NOW_ROUND:2+ACTION:ANNOUNCEMENT+CHARACTER:C0005": [
+            707
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0003": [
+            708,
+            709,
+            710,
+            711,
+            712
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0004": [
+            713,
+            714,
+            715,
+            716,
+            717
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0001": [
+            718,
+            719,
+            720,
+            721,
+            722
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0000": [
+            723,
+            724,
+            725,
+            726,
+            727
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0002": [
+            728,
+            729,
+            730,
+            731,
+            732
+        ],
+        "NOW_ROUND:2+ACTION:UPDATE+CHARACTER:C0005": [
+            733,
+            734,
+            735,
+            736,
+            737
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0003": [
+            738,
+            739
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0004": [
+            740,
+            741
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0001": [
+            742,
+            743
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0000": [
+            744,
+            745
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0002": [
+            746,
+            747
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:GUESS+CHARACTER:C0005": [
+            748,
+            749
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0003": [
+            750
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0004": [
+            751
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0001": [
+            752
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0000": [
+            753
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0002": [
+            754
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:OPENSPEECHSTAGE+CHARACTER:C0005": [
+            755
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0003": [
+            756,
+            757
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0004": [
+            758,
+            759
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0001": [
+            760,
+            761
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0000": [
+            762,
+            763
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0002": [
+            764,
+            765
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTE+CHARACTER:C0005": [
+            766,
+            767
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0003": [
+            768,
+            769
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0004": [
+            770,
+            771
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0001": [
+            772,
+            773
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0000": [
+            774,
+            775
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0002": [
+            776,
+            777
+        ],
+        "NOW_ROUND:SETTELMENT+ACTION:VOTEOTHER+CHARACTER:C0005": [
+            778,
+            779
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0003": [
+            780,
+            781
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0004": [
+            782,
+            783
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0001": [
+            784,
+            785
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0000": [
+            786,
+            787
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0002": [
+            788,
+            789
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:GUESS+CHARACTER:C0005": [
+            790,
+            791
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0003": [
+            792
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0004": [
+            793
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0001": [
+            794
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0000": [
+            795
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0002": [
+            796
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:OPENSPEECHSTAGE+CHARACTER:C0005": [
+            797
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0003": [
+            798,
+            799
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0004": [
+            800,
+            801
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0001": [
+            802,
+            803
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0000": [
+            804,
+            805
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0002": [
+            806,
+            807
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTE+CHARACTER:C0005": [
+            808,
+            809
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0003": [
+            810,
+            811
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0004": [
+            812,
+            813
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0001": [
+            814,
+            815
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0000": [
+            816,
+            817
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0002": [
+            818,
+            819
+        ],
+        "NOW_ROUND:SETTLEMENT(CHEATING)+ACTION:VOTEOTHER+CHARACTER:C0005": [
+            820,
+            821
+        ]
+    },
+    "log_file_name": "./logs/20241022123427.987127.json"
+}

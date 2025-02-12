@@ -27,10 +27,11 @@ import numpy
 from config import TEST_FOLDER
 # evaluate_saving_dir = './storage/test_version'
 # evaluate_saving_dir = './storage/succession/saving/gpt35_7'
-suc_dir = './storage/succession/saving'
+# suc_dir = './storage/succession/saving'
 # action_history_dir = os.path.join(evaluate_saving_dir, 'action_history')
+suc_dir = 'storage/succession/'
 chn = True
-qe = False
+qe = True
 n_gram=2
 
 
@@ -41,7 +42,7 @@ if qe:
     print()
 
     for evaluate_saving in os.listdir(suc_dir):
-        if evaluate_saving == 'initial_version': continue
+        if evaluate_saving in ['initial_version', 'images']: continue
         evaluate_saving_dir = os.path.join(suc_dir, evaluate_saving)
         if not os.path.isdir(evaluate_saving_dir): continue
         action_history_dir = os.path.join(evaluate_saving_dir, 'action_history')
@@ -66,7 +67,7 @@ print('Entropy Evaluation')
 print('='*50)
 print()
 for evaluate_saving in os.listdir(suc_dir):
-    if evaluate_saving == 'initial_version': continue
+    if evaluate_saving in ['initial_version', 'images']: continue
     evaluate_saving_dir = os.path.join(suc_dir, evaluate_saving)
     if not os.path.isdir(evaluate_saving_dir): continue
     action_history_dir = os.path.join(evaluate_saving_dir, 'action_history')

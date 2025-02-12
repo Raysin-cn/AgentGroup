@@ -1,5 +1,5 @@
-SAVE_FOLDER = './storage/succession/initial_version'
-TEST_FOLDER = './storage/succession/test_version'
+SAVE_FOLDER = './storage/IsraeliPalestinianConflict_CH/initial_version'
+TEST_FOLDER = './storage/IsraeliPalestinianConflict_CH/initial_version'
 
 # TEST_FOLDER = './storage/succession/saving/chatglm_128k_1'
 # TEST_FOLDER = './storage/succession/saving/chatglm_64k_1'
@@ -9,7 +9,7 @@ TEST_FOLDER = './storage/succession/test_version'
 # TEST_FOLDER = './storage/succession/saving/falcon_1'
 # SAVE_FOLDER = TEST_FOLDER
 LOG_FOLDER = './logs'
-INPUT_FOLDER = './storage/succession/inputs'
+# INPUT_FOLDER = './storage/succession/inputs'
 
 model_cache_dir = 'cache_folder'
 if 'llama2' in TEST_FOLDER:

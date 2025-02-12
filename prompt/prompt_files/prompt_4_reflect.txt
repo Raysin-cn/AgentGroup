@@ -46,5 +46,5 @@ Below is a demonstration of your output:
 ### Belief Change: !<INPUT 10>!
 
 Reminder:
-1. Your Reflect Result output must be in English.
+1. Your Reflect Result output must be in Chinese.
 2. If you think it's no need to change "Belief Change", you should use unchanged score (0).

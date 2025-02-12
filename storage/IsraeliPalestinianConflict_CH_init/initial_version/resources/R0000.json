@@ -1,0 +1,10 @@
+{
+    "name": "决议草案一",
+    "id_number": "R0000",
+    "description": "决议草案一：加沙地区停火与人道主义援助",
+    "influence": "30",
+    "owner": "C0000",
+    "topic": "呼吁立即停火[TOPIC_SEP]人道主义通道[TOPIC_SEP]国际监督[TOPIC_SEP]支持和对话",
+    "portrait": "./storage/images/portrait/resource/default.jpg",
+    "small_portrait": "./storage/images/small_portrait/resource/default.jpg"
+}

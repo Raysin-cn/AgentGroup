@@ -32,7 +32,7 @@ You should think about your strategy first, and output the results of your think
 Then you need to have a total of !<INPUT 6>! turns of dialogue with your chosen character. Please think about your dialogue strategy and output the topic of each turn of dialogue after "### Plan:".
 请你在"### Action Space:"后面输出你所有可以选择的角色，并用英文逗号","进行分隔。
 Finally, please choose the name of the role you want to talk to, please output the name directly after "### Choose:", such as C0001, do not reply any additional content.
-Reminder: Your output must be in English.
+Reminder: Your output must be in Chinese.
 Here is an example of your response:
 
 ### Action Space: xxxx, xxxx, ....

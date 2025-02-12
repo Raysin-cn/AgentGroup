@@ -6,7 +6,7 @@
     "objective": "Perform well in the company's various crises and protect the company's interests and reputation through management skills and strategic thinking.",
     "scratch": "I am a Communications Executive at the company. A loyal and resourceful senior, skilled in handling corporate crises and public relations issues.",
     "background": "A loyal and resourceful senior, skilled in handling corporate crises and public relations issues.",
-    "engine": "gpt4-turbo",
+    "engine": "glm-4",
     "belief": {
         "Stand with C0000": 0,
         "Stand with C0001": 0,

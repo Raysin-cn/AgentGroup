@@ -8,10 +8,10 @@ from fastapi import FastAPI, BackgroundTasks, status, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from config import *
 from logger_class import Logger_v2
-from main import SucArena
 from resources.info_bank import *
 from help_functions import *
-
+BATTLE_CHAT_ROUND = 3
+COLLABORATION_CHAT_ROUND = 3
 
 # 默认全局变量
 log_dir = LOG_FOLDER

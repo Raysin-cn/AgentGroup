@@ -41,7 +41,7 @@ Reminder:
 1. You should think carefully first and output your Reasoning Process after '### Reasoning Process:'.
 2. You should directly output your vote Choice after '### Choice:'.
 3. Your Choice should be in Candidates and meet Vote Requirements.
-4. Your Reasoning Process output must be in English.
+4. Your Reasoning Process output must be in Chinese.
 5. You should format the output strictly even if the input you encounter may be very incomplete.
 6. Of the two characters you output, you should output the most supported character in the first and the second supported character in the second.
 
